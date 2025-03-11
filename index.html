@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandesh Dhakal - Software Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- TensorFlow.js and QnA model dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/qna"></script>
+</head>
+<body>
+    <button class="theme-toggle" aria-label="Toggle theme">
+        <i class="fas fa-moon"></i>
+    </button>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <span class="logo-bracket">&lt;</span>
+                    <span class="logo-text">Sandesh<span class="logo-dot">.</span>Dhakal</span>
+                    <span class="logo-bracket">/&gt;</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hi, I'm <span class="highlight">Sandesh Dhakal</span></h1>
+                <h2>I'm a <span class="typed-text"></span><span class="cursor">&nbsp;</span></h2>
+                <p>Result-driven Software Engineer with expertise in designing, developing, and deploying scalable software solutions.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary-btn">View My Work</a>
+                    <a href="#contact" class="btn secondary-btn">Contact Me</a>
+                </div>
+                <div class="social-icons">
+                    <a href="https://github.com/SandeshDhakal0" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/dhakalsandesh0" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/dhakalsandesh0/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/sandeshjee" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-shape"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://via.placeholder.com/400" alt="Sandesh Dhakal">
+                </div>
+                <div class="about-text">
+                    <h3>Professional Summary</h3>
+                    <p>Result-driven Software Engineer with expertise in designing, developing, and deploying scalable software solutions. Proficient in .NET, Javascript, Blazor, .Net Maui, React, Next.js and Agile methodologies. Strong skills in integrating third-party hardware components, optimizing system performance, and maintaining technical documentation. Experienced in translating business needs into technical requirements and collaborating with cross-functional teams.</p>
+                    
+                    <h3>Education</h3>
+                    <p><strong>Bachelor's in Computing</strong><br>
+                    Islington College, Kathmandu<br>
+                    January 2020 – April 2022</p>
+                    
+                    <h3>Location</h3>
+                    <p>Kathmandu, Nepal</p>
+                    
+                    <a href="#" class="btn primary-btn">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2>Professional Experience</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">November 2023 – Present</div>
+                    <div class="timeline-content">
+                        <h3>Software Engineer</h3>
+                        <h4>The High Innovations Pvt. Ltd, Nepal</h4>
+                        <ul>
+                            <li>Spearheaded the design, development, and deployment of scalable Point of Sale (POS) software for retail and hospitality industries.</li>
+                            <li>Led the design and development of a cross-platform POS application using .NET MAUI for iOS and Android.</li>
+                            <li>Collaborated with cross-functional teams to define technical requirements and ensure timely delivery of software solutions.</li>
+                            <li>Integrated third-party hardware components (barcode scanners, card readers, printers) into POS systems.</li>
+                            <li>Developed and maintained technical documentation including system architecture, API documentation, and user manuals.</li>
+                            <li>Managed project budgets and timelines, ensuring projects were completed within scope and on schedule.</li>
+                            <li>Mentored junior developers, enhancing team skills and productivity.</li>
+                            <li>Developed a Property Review application, for following the latest property trends in Australia.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">December 2022 – October 2023</div>
+                    <div class="timeline-content">
+                        <h3>.NET Developer</h3>
+                        <h4>Aava Global Pvt. Ltd, Nepal</h4>
+                        <ul>
+                            <li>Developed and tested APIs for a Human Resource Information System (HRIS) using .NET.</li>
+                            <li>Designed optimized database architecture to enhance performance and scalability.</li>
+                            <li>Employed Redis Caching, JWT, and Dapper for robust system performance.</li>
+                            <li>Integrated APIs with AWS S3 for cloud-based image storage solutions.</li>
+                            <li>Ensured compliance with security best practices, safeguarding sensitive HR data against potential vulnerabilities.</li>
+                            <li>Created comprehensive API documentation using tools like Swagger, facilitating easier integration for frontend teams and third-party developers.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">August 2022 – January 2023</div>
+                    <div class="timeline-content">
+                        <h3>Software Developer</h3>
+                        <h4>Kantipur Media Group Pvt. Ltd, Nepal</h4>
+                        <ul>
+                            <li>Designed and implemented new features for Human Resource Management Software.</li>
+                            <li>Integrated Beat-route API for efficient employee attendance management.</li>
+                            <li>Developed a web-based platform for the General Election 2022 to manage results and candidate information.</li>
+                            <li>Worked closely with marketing, editorial, and engineering teams to facilitate development and deployment.</li>
+                            <li>Utilized Laravel framework and Git version control, demonstrating expertise in modern PHP development tools.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>My Skills</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-container">
+                <div class="skills-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item" data-skill="C#">
+                            <div class="skill-icon"><i class="fab fa-microsoft"></i></div>
+                            <h4>C#</h4>
+                        </div>
+                        <div class="skill-item" data-skill="JavaScript">
+                            <div class="skill-icon"><i class="fab fa-js"></i></div>
+                            <h4>JavaScript</h4>
+                        </div>
+                        <div class="skill-item" data-skill="HTML">
+                            <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                            <h4>HTML</h4>
+                        </div>
+                        <div class="skill-item" data-skill="CSS">
+                            <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                            <h4>CSS</h4>
+                        </div>
+                        <div class="skill-item" data-skill="PHP">
+                            <div class="skill-icon"><i class="fab fa-php"></i></div>
+                            <h4>PHP</h4>
+                        </div>
+                        <div class="skill-item" data-skill="Python">
+                            <div class="skill-icon"><i class="fab fa-python"></i></div>
+                            <h4>Python</h4>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-category">
+                    <h3>Technologies</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item" data-skill=".NET">
+                            <div class="skill-icon"><i class="fab fa-microsoft"></i></div>
+                            <h4>.NET</h4>
+                        </div>
+                        <div class="skill-item" data-skill="Blazor">
+                            <div class="skill-icon"><i class="fab fa-microsoft"></i></div>
+                            <h4>Blazor</h4>
+                        </div>
+                        <div class="skill-item" data-skill="React">
+                            <div class="skill-icon"><i class="fab fa-react"></i></div>
+                            <h4>React</h4>
+                        </div>
+                        <div class="skill-item" data-skill="Next.js">
+                            <div class="skill-icon"><i class="fab fa-react"></i></div>
+                            <h4>Next.js</h4>
+                        </div>
+                        <div class="skill-item" data-skill="Angular">
+                            <div class="skill-icon"><i class="fab fa-angular"></i></div>
+                            <h4>Angular</h4>
+                        </div>
+                        <div class="skill-item" data-skill="Git">
+                            <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                            <h4>Git</h4>
+                        </div>
+                        <div class="skill-item" data-skill="Docker">
+                            <div class="skill-icon"><i class="fab fa-docker"></i></div>
+                            <h4>Docker</h4>
+                        </div>
+                        <div class="skill-item" data-skill="Linux">
+                            <div class="skill-icon"><i class="fab fa-linux"></i></div>
+                            <h4>Linux</h4>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-category">
+                    <h3>Database Management</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item" data-skill="SQL">
+                            <div class="skill-icon"><i class="fas fa-database"></i></div>
+                            <h4>SQL</h4>
+                        </div>
+                        <div class="skill-item" data-skill="PostgreSQL">
+                            <div class="skill-icon"><i class="fas fa-database"></i></div>
+                            <h4>PostgreSQL</h4>
+                        </div>
+                        <div class="skill-item" data-skill="MySQL">
+                            <div class="skill-icon"><i class="fas fa-database"></i></div>
+                            <h4>MySQL</h4>
+                        </div>
+                        <div class="skill-item" data-skill="NoSQL">
+                            <div class="skill-icon"><i class="fas fa-database"></i></div>
+                            <h4>NoSQL</h4>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-category">
+                    <h3>Other Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item" data-skill="RESTful API">
+                            <div class="skill-icon"><i class="fas fa-exchange-alt"></i></div>
+                            <h4>RESTful API</h4>
+                        </div>
+                        <div class="skill-item" data-skill="GraphQL">
+                            <div class="skill-icon"><i class="fas fa-project-diagram"></i></div>
+                            <h4>GraphQL</h4>
+                        </div>
+                        <div class="skill-item" data-skill="Cloud Storage">
+                            <div class="skill-icon"><i class="fas fa-cloud"></i></div>
+                            <h4>Cloud Storage</h4>
+                        </div>
+                        <div class="skill-item" data-skill="System Design">
+                            <div class="skill-icon"><i class="fas fa-sitemap"></i></div>
+                            <h4>System Design</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2>My Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="desktop">Desktop</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="web">
+                    <div class="project-card">
+                        <h3>Election Results Website</h3>
+                        <p>Developed a real-time web solution for the General Election 2022 to manage results and candidate data.</p>
+                        <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="web">
+                    <div class="project-card">
+                        <h3>HRIS Development</h3>
+                        <p>Contributed to the enhancement of a Human Resource Information System, improving functionality and user experience.</p>
+                        <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="desktop mobile">
+                    <div class="project-card">
+                        <h3>POS System</h3>
+                        <p>Designing, planning and development of POS system for Nepali Market. With mobile pay integration, Multi tenant, Multi vendor platform.</p>
+                        <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="web">
+                    <div class="project-card">
+                        <h3>Property Watch</h3>
+                        <p>Built a Next.js based platform for real-time property reviews and trend analysis, improving data-driven decision making.</p>
+                        <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="desktop">
+                    <div class="project-card">
+                        <h3>ZKTECO</h3>
+                        <p>Attendance puller for standalone devices to manage attendance sync in different office location under same public IP.</p>
+                        <a href="https://github.com/SandeshDhakal0/ZKTeco-Device-Config-for-Attendance" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Location</h3>
+                            <p>Kathmandu, Nepal</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Email</h3>
+                            <p>dhakalsandesh0@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Phone</h3>
+                            <p>(+977) 9845916486</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Sandesh Dhakal. All Rights Reserved.</p>
+                <div class="social-icons">
+                    <a href="https://github.com/SandeshDhakal0" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/sandesh-dhakal" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:dhakalsandesh0@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                    <a href="tel:+9779845916486" target="_blank"><i class="fas fa-phone"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#home" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <script src="script.js"></script>
+    <script src="theme.js"></script>
+    <script src="chatbot.js"></script>
+
+    <!-- Chat Bot -->
+    <div class="chat-bot">
+        <div class="chat-bot-toggle">
+            <i class="fas fa-comments"></i>
+            <span class="chat-bot-badge">1</span>
+        </div>
+        <div class="chat-bot-container">
+            <div class="chat-bot-header">
+                <div class="chat-bot-title">
+                    <i class="fas fa-robot"></i>
+                    <h3>Portfolio Assistant</h3>
+                </div>
+                <button class="chat-bot-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="chat-bot-messages">
+                <div class="chat-message bot">
+                    <div class="chat-message-content">
+                        <p>👋 Hi! I'm your AI-powered portfolio assistant. Please wait while I load my knowledge...</p>
+                    </div>
+                    <span class="chat-time">Just now</span>
+                </div>
+                <div class="chat-loading">
+                    <div class="loading-spinner"></div>
+                    <p>Loading AI model...</p>
+                </div>
+            </div>
+            <div class="chat-bot-input">
+                <input type="text" placeholder="Type your message..." id="chat-input" disabled>
+                <button class="chat-send" disabled>
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
