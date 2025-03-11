@@ -188,71 +188,88 @@ document.addEventListener('DOMContentLoaded', function() {
     revealOnScroll(); // Run once on page load
     
     // Particle.js Configuration
-    particlesJS('particles-js', {
-        particles: {
-            number: {
-                value: 60,
-                density: {
-                    enable: true,
-                    value_area: 800
-                }
-            },
-            color: {
-                value: '#95a5a6'
-            },
-            shape: {
-                type: 'circle'
-            },
-            opacity: {
-                value: 0.2,
-                random: false
-            },
-            size: {
-                value: 3,
-                random: true
-            },
-            line_linked: {
-                enable: true,
-                distance: 150,
-                color: '#95a5a6',
-                opacity: 0.15,
-                width: 1
-            },
-            move: {
-                enable: true,
-                speed: 1,
-                direction: 'none',
-                random: false,
-                straight: false,
-                out_mode: 'out',
-                bounce: false
-            }
-        },
-        interactivity: {
-            detect_on: 'canvas',
-            events: {
-                onhover: {
-                    enable: true,
-                    mode: 'grab'
-                },
-                onclick: {
-                    enable: true,
-                    mode: 'push'
-                },
-                resize: true
-            },
-            modes: {
-                grab: {
-                    distance: 140,
-                    line_linked: {
-                        opacity: 0.3
+    function updateParticles() {
+        const isDarkMode = document.documentElement.getAttribute('data-theme') === 'dark';
+        const particleColor = getComputedStyle(document.documentElement).getPropertyValue('--particle-color').trim();
+        const particleLineColor = getComputedStyle(document.documentElement).getPropertyValue('--particle-line-color').trim();
+        
+        particlesJS('particles-js', {
+            particles: {
+                number: {
+                    value: 50,
+                    density: {
+                        enable: true,
+                        value_area: 800
                     }
                 },
-                push: {
-                    particles_nb: 3
+                color: {
+                    value: particleColor
+                },
+                shape: {
+                    type: 'circle'
+                },
+                opacity: {
+                    value: 0.5,
+                    random: false
+                },
+                size: {
+                    value: 3,
+                    random: true
+                },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: particleLineColor,
+                    opacity: 0.2,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 0.8,
+                    direction: 'none',
+                    random: false,
+                    straight: false,
+                    out_mode: 'out',
+                    bounce: false
                 }
-            }
-        },
-        retina_detect: true
-    });
+            },
+            interactivity: {
+                detect_on: 'canvas',
+                events: {
+                    onhover: {
+                        enable: true,
+                        mode: 'grab'
+                    },
+                    onclick: {
+                        enable: true,
+                        mode: 'push'
+                    },
+                    resize: true
+                },
+                modes: {
+                    grab: {
+                        distance: 140,
+                        line_linked: {
+                            opacity: 0.4
+                        }
+                    },
+                    push: {
+                        particles_nb: 3
+                    }
+                }
+            },
+            retina_detect: true
+        });
+    }
+
+    // Initial particles setup
+    updateParticles();
+
+    // Update particles when theme changes
+    const themeToggle = document.querySelector('.theme-toggle');
+    if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+            setTimeout(updateParticles, 100); // Wait for theme change to complete
+        });
+    }
 }); 
