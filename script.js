@@ -170,16 +170,30 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Animation on scroll
+    // Enhanced Animation on scroll with skill progress bars
     function revealOnScroll() {
         const elements = document.querySelectorAll('.skill-item, .portfolio-item, .timeline-item, .about-image, .about-text, .contact-info, .contact-form');
         
-        elements.forEach(element => {
+        elements.forEach((element, index) => {
             const elementTop = element.getBoundingClientRect().top;
             const windowHeight = window.innerHeight;
             
             if (elementTop < windowHeight - 100) {
-                element.classList.add('reveal');
+                // Add staggered animation delay
+                setTimeout(() => {
+                    element.classList.add('reveal');
+                    
+                    // Animate skill progress bars
+                    if (element.classList.contains('skill-item')) {
+                        const progressBar = element.querySelector('.skill-progress-bar');
+                        const width = progressBar.getAttribute('data-width');
+                        if (progressBar && width) {
+                            setTimeout(() => {
+                                progressBar.style.width = width + '%';
+                            }, 200);
+                        }
+                    }
+                }, index * 100);
             }
         });
     }
