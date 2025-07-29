@@ -46,12 +46,36 @@
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>Hi, I'm <span class="highlight">Sandesh Dhakal</span></h1>
+                <div class="hero-greeting">
+                    <span class="greeting-icon">👋</span>
+                    <span class="greeting-text">Hello, I'm</span>
+                </div>
+                <h1><span class="highlight">Sandesh Dhakal</span></h1>
                 <h2>I'm a <span class="typed-text"></span><span class="cursor">&nbsp;</span></h2>
                 <p>Result-driven Software Engineer with expertise in designing, developing, and deploying scalable software solutions.</p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">3+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Projects Completed</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">Technologies</span>
+                    </div>
+                </div>
                 <div class="hero-buttons">
-                    <a href="#projects" class="btn primary-btn">View My Work</a>
-                    <a href="#contact" class="btn secondary-btn">Contact Me</a>
+                    <a href="#projects" class="btn primary-btn">
+                        <i class="fas fa-rocket"></i>
+                        View My Work
+                    </a>
+                    <a href="#contact" class="btn secondary-btn">
+                        <i class="fas fa-envelope"></i>
+                        Contact Me
+                    </a>
                 </div>
                 <div class="social-icons">
                     <a href="https://github.com/SandeshDhakal0" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
@@ -62,6 +86,25 @@
             </div>
             <div class="hero-image">
                 <div class="hero-shape"></div>
+                <div class="hero-code-snippet">
+                    <div class="code-header">
+                        <div class="code-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <span class="code-title">portfolio.cs</span>
+                    </div>
+                    <div class="code-content">
+                        <pre><code><span class="code-keyword">public class</span> <span class="code-class">Developer</span>
+{
+    <span class="code-keyword">public string</span> Name = <span class="code-string">"Sandesh"</span>;
+    <span class="code-keyword">public string[]</span> Skills = {
+        <span class="code-string">".NET"</span>, <span class="code-string">"React"</span>, <span class="code-string">"Blazor"</span>
+    };
+}</code></pre>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -74,7 +117,20 @@
             </div>
             <div class="about-content">
                 <div class="about-image">
-                    <img src="https://via.placeholder.com/400" alt="Sandesh Dhakal">
+                    <div class="profile-image-container">
+                        <div class="profile-image-bg"></div>
+                        <div class="profile-image">
+                            <div class="profile-placeholder">
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                        <div class="floating-elements">
+                            <div class="floating-element" data-tech="C#"><i class="fab fa-microsoft"></i></div>
+                            <div class="floating-element" data-tech="React"><i class="fab fa-react"></i></div>
+                            <div class="floating-element" data-tech="JS"><i class="fab fa-js"></i></div>
+                            <div class="floating-element" data-tech="Docker"><i class="fab fa-docker"></i></div>
+                        </div>
+                    </div>
                 </div>
                 <div class="about-text">
                     <h3>Professional Summary</h3>
@@ -166,29 +222,53 @@
                 <div class="skills-category">
                     <h3>Programming Languages</h3>
                     <div class="skills-grid">
-                        <div class="skill-item" data-skill="C#">
+                        <div class="skill-item" data-skill="C#" data-level="90">
                             <div class="skill-icon"><i class="fab fa-microsoft"></i></div>
                             <h4>C#</h4>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" data-width="90"></div>
+                            </div>
+                            <span class="skill-level">Expert</span>
                         </div>
-                        <div class="skill-item" data-skill="JavaScript">
+                        <div class="skill-item" data-skill="JavaScript" data-level="85">
                             <div class="skill-icon"><i class="fab fa-js"></i></div>
                             <h4>JavaScript</h4>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" data-width="85"></div>
+                            </div>
+                            <span class="skill-level">Advanced</span>
                         </div>
-                        <div class="skill-item" data-skill="HTML">
+                        <div class="skill-item" data-skill="HTML" data-level="95">
                             <div class="skill-icon"><i class="fab fa-html5"></i></div>
                             <h4>HTML</h4>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" data-width="95"></div>
+                            </div>
+                            <span class="skill-level">Expert</span>
                         </div>
-                        <div class="skill-item" data-skill="CSS">
+                        <div class="skill-item" data-skill="CSS" data-level="90">
                             <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
                             <h4>CSS</h4>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" data-width="90"></div>
+                            </div>
+                            <span class="skill-level">Expert</span>
                         </div>
-                        <div class="skill-item" data-skill="PHP">
+                        <div class="skill-item" data-skill="PHP" data-level="75">
                             <div class="skill-icon"><i class="fab fa-php"></i></div>
                             <h4>PHP</h4>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" data-width="75"></div>
+                            </div>
+                            <span class="skill-level">Advanced</span>
                         </div>
-                        <div class="skill-item" data-skill="Python">
+                        <div class="skill-item" data-skill="Python" data-level="70">
                             <div class="skill-icon"><i class="fab fa-python"></i></div>
                             <h4>Python</h4>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" data-width="70"></div>
+                            </div>
+                            <span class="skill-level">Intermediate</span>
                         </div>
                     </div>
                 </div>
@@ -196,37 +276,69 @@
                 <div class="skills-category">
                     <h3>Technologies</h3>
                     <div class="skills-grid">
-                        <div class="skill-item" data-skill=".NET">
+                        <div class="skill-item" data-skill=".NET" data-level="90">
                             <div class="skill-icon"><i class="fab fa-microsoft"></i></div>
                             <h4>.NET</h4>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" data-width="90"></div>
+                            </div>
+                            <span class="skill-level">Expert</span>
                         </div>
-                        <div class="skill-item" data-skill="Blazor">
+                        <div class="skill-item" data-skill="Blazor" data-level="85">
                             <div class="skill-icon"><i class="fab fa-microsoft"></i></div>
                             <h4>Blazor</h4>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" data-width="85"></div>
+                            </div>
+                            <span class="skill-level">Advanced</span>
                         </div>
-                        <div class="skill-item" data-skill="React">
+                        <div class="skill-item" data-skill="React" data-level="80">
                             <div class="skill-icon"><i class="fab fa-react"></i></div>
                             <h4>React</h4>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" data-width="80"></div>
+                            </div>
+                            <span class="skill-level">Advanced</span>
                         </div>
-                        <div class="skill-item" data-skill="Next.js">
+                        <div class="skill-item" data-skill="Next.js" data-level="75">
                             <div class="skill-icon"><i class="fab fa-react"></i></div>
                             <h4>Next.js</h4>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" data-width="75"></div>
+                            </div>
+                            <span class="skill-level">Advanced</span>
                         </div>
-                        <div class="skill-item" data-skill="Angular">
+                        <div class="skill-item" data-skill="Angular" data-level="65">
                             <div class="skill-icon"><i class="fab fa-angular"></i></div>
                             <h4>Angular</h4>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" data-width="65"></div>
+                            </div>
+                            <span class="skill-level">Intermediate</span>
                         </div>
-                        <div class="skill-item" data-skill="Git">
+                        <div class="skill-item" data-skill="Git" data-level="85">
                             <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
                             <h4>Git</h4>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" data-width="85"></div>
+                            </div>
+                            <span class="skill-level">Advanced</span>
                         </div>
-                        <div class="skill-item" data-skill="Docker">
+                        <div class="skill-item" data-skill="Docker" data-level="70">
                             <div class="skill-icon"><i class="fab fa-docker"></i></div>
                             <h4>Docker</h4>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" data-width="70"></div>
+                            </div>
+                            <span class="skill-level">Intermediate</span>
                         </div>
-                        <div class="skill-item" data-skill="Linux">
+                        <div class="skill-item" data-skill="Linux" data-level="75">
                             <div class="skill-icon"><i class="fab fa-linux"></i></div>
                             <h4>Linux</h4>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" data-width="75"></div>
+                            </div>
+                            <span class="skill-level">Advanced</span>
                         </div>
                     </div>
                 </div>
@@ -234,21 +346,37 @@
                 <div class="skills-category">
                     <h3>Database Management</h3>
                     <div class="skills-grid">
-                        <div class="skill-item" data-skill="SQL">
+                        <div class="skill-item" data-skill="SQL" data-level="85">
                             <div class="skill-icon"><i class="fas fa-database"></i></div>
                             <h4>SQL</h4>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" data-width="85"></div>
+                            </div>
+                            <span class="skill-level">Advanced</span>
                         </div>
-                        <div class="skill-item" data-skill="PostgreSQL">
+                        <div class="skill-item" data-skill="PostgreSQL" data-level="80">
                             <div class="skill-icon"><i class="fas fa-database"></i></div>
                             <h4>PostgreSQL</h4>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" data-width="80"></div>
+                            </div>
+                            <span class="skill-level">Advanced</span>
                         </div>
-                        <div class="skill-item" data-skill="MySQL">
+                        <div class="skill-item" data-skill="MySQL" data-level="85">
                             <div class="skill-icon"><i class="fas fa-database"></i></div>
                             <h4>MySQL</h4>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" data-width="85"></div>
+                            </div>
+                            <span class="skill-level">Advanced</span>
                         </div>
-                        <div class="skill-item" data-skill="NoSQL">
+                        <div class="skill-item" data-skill="NoSQL" data-level="70">
                             <div class="skill-icon"><i class="fas fa-database"></i></div>
                             <h4>NoSQL</h4>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" data-width="70"></div>
+                            </div>
+                            <span class="skill-level">Intermediate</span>
                         </div>
                     </div>
                 </div>
@@ -256,21 +384,37 @@
                 <div class="skills-category">
                     <h3>Other Skills</h3>
                     <div class="skills-grid">
-                        <div class="skill-item" data-skill="RESTful API">
+                        <div class="skill-item" data-skill="RESTful API" data-level="90">
                             <div class="skill-icon"><i class="fas fa-exchange-alt"></i></div>
                             <h4>RESTful API</h4>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" data-width="90"></div>
+                            </div>
+                            <span class="skill-level">Expert</span>
                         </div>
-                        <div class="skill-item" data-skill="GraphQL">
+                        <div class="skill-item" data-skill="GraphQL" data-level="65">
                             <div class="skill-icon"><i class="fas fa-project-diagram"></i></div>
                             <h4>GraphQL</h4>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" data-width="65"></div>
+                            </div>
+                            <span class="skill-level">Intermediate</span>
                         </div>
-                        <div class="skill-item" data-skill="Cloud Storage">
+                        <div class="skill-item" data-skill="Cloud Storage" data-level="80">
                             <div class="skill-icon"><i class="fas fa-cloud"></i></div>
                             <h4>Cloud Storage</h4>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" data-width="80"></div>
+                            </div>
+                            <span class="skill-level">Advanced</span>
                         </div>
-                        <div class="skill-item" data-skill="System Design">
+                        <div class="skill-item" data-skill="System Design" data-level="75">
                             <div class="skill-icon"><i class="fas fa-sitemap"></i></div>
                             <h4>System Design</h4>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" data-width="75"></div>
+                            </div>
+                            <span class="skill-level">Advanced</span>
                         </div>
                     </div>
                 </div>
@@ -293,37 +437,117 @@
             <div class="portfolio-grid">
                 <div class="portfolio-item" data-category="web">
                     <div class="project-card">
-                        <h3>Election Results Website</h3>
-                        <p>Developed a real-time web solution for the General Election 2022 to manage results and candidate data.</p>
-                        <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <span class="project-type">Web Application</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Election Results Website</h3>
+                            <p>Developed a real-time web solution for the General Election 2022 to manage results and candidate data.</p>
+                            <div class="project-tags">
+                                <span class="tech-tag">Laravel</span>
+                                <span class="tech-tag">PHP</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                            <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
                     </div>
                 </div>
                 <div class="portfolio-item" data-category="web">
                     <div class="project-card">
-                        <h3>HRIS Development</h3>
-                        <p>Contributed to the enhancement of a Human Resource Information System, improving functionality and user experience.</p>
-                        <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <span class="project-type">Enterprise Solution</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>HRIS Development</h3>
+                            <p>Contributed to the enhancement of a Human Resource Information System, improving functionality and user experience.</p>
+                            <div class="project-tags">
+                                <span class="tech-tag">.NET</span>
+                                <span class="tech-tag">Redis</span>
+                                <span class="tech-tag">JWT</span>
+                                <span class="tech-tag">AWS S3</span>
+                            </div>
+                            <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
                     </div>
                 </div>
                 <div class="portfolio-item" data-category="desktop mobile">
                     <div class="project-card">
-                        <h3>POS System</h3>
-                        <p>Designing, planning and development of POS system for Nepali Market. With mobile pay integration, Multi tenant, Multi vendor platform.</p>
-                        <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-cash-register"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <span class="project-type">Cross-Platform</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>POS System</h3>
+                            <p>Designing, planning and development of POS system for Nepali Market. With mobile pay integration, Multi tenant, Multi vendor platform.</p>
+                            <div class="project-tags">
+                                <span class="tech-tag">.NET MAUI</span>
+                                <span class="tech-tag">Blazor</span>
+                                <span class="tech-tag">SQL Server</span>
+                                <span class="tech-tag">Payment APIs</span>
+                            </div>
+                            <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
                     </div>
                 </div>
                 <div class="portfolio-item" data-category="web">
                     <div class="project-card">
-                        <h3>Property Watch</h3>
-                        <p>Built a Next.js based platform for real-time property reviews and trend analysis, improving data-driven decision making.</p>
-                        <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <span class="project-type">Analytics Platform</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Property Watch</h3>
+                            <p>Built a Next.js based platform for real-time property reviews and trend analysis, improving data-driven decision making.</p>
+                            <div class="project-tags">
+                                <span class="tech-tag">Next.js</span>
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                            </div>
+                            <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
                     </div>
                 </div>
                 <div class="portfolio-item" data-category="desktop">
                     <div class="project-card">
-                        <h3>ZKTECO</h3>
-                        <p>Attendance puller for standalone devices to manage attendance sync in different office location under same public IP.</p>
-                        <a href="https://github.com/SandeshDhakal0/ZKTeco-Device-Config-for-Attendance" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-fingerprint"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <span class="project-type">Desktop Tool</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>ZKTECO</h3>
+                            <p>Attendance puller for standalone devices to manage attendance sync in different office location under same public IP.</p>
+                            <div class="project-tags">
+                                <span class="tech-tag">C#</span>
+                                <span class="tech-tag">.NET Framework</span>
+                                <span class="tech-tag">TCP/IP</span>
+                                <span class="tech-tag">Device Integration</span>
+                            </div>
+                            <a href="https://github.com/SandeshDhakal0/ZKTeco-Device-Config-for-Attendance" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
